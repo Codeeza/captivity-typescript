@@ -56,16 +56,16 @@
 
 .centeredHeading {
   text-transform: uppercase;
-  color: black;
+  color: rgb(90, 90, 90);
   font-weight: bold;
-  margin: 40px 0; /* Increased margin */
-  font-size: 2.5rem; /* Increased font size */
+  margin: -15px 0 0; /* Increased margin */
+  font-size: xx-large; /* Increased font size */
   text-align: center; /* Center the text */
 }
 
 /* Base paragraph style with left alignment and spacing */
 .paragraph {
-  color: black;
+  color: rgb(131, 131, 131);
   line-height: 1.6;
   font-size: 1.2rem; /* Increased font size */
   text-align: left; /* Align text to the left */
