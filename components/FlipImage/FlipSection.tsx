@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
-import ReactCardFlip from "react-card-flip";
+
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import ReactCardFlip from "react-card-flip";
 
 const FlipSection = () => {
   const [isFlipped, setIsFlipped] = useState(false);

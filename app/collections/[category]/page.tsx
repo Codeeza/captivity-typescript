@@ -57,32 +57,65 @@ export default function CategoryPage({ params }) {
                 <ul className="menu border-2 p-2 text-gray-700">
                   <span className="text-xl font-bold">HEADWEAR</span>
                   <li>
-                    <Link href="/headwear/newInHeadwear">New in Headwear</Link>
+                    <Link
+                      href="/headwear/newInHeadwear"
+                      className="hover:text-gray-500"
+                    >
+                      New in Headwear
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/headwear/flatPeaks">Flat Peaks</Link>
+                    <Link
+                      href="/headwear/flatPeaks"
+                      className="hover:text-gray-500"
+                    >
+                      Flat Peaks
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/headwear/preCurvedPeaks">
+                    <Link
+                      href="/headwear/preCurvedPeaks"
+                      className="hover:text-gray-500"
+                    >
                       Pre-Curved Peaks
                     </Link>
                   </li>
                   <li>
-                    <Link href="/headwear/hats">Hats</Link>
+                    <Link href="/headwear/hats" className="hover:text-gray-500">
+                      Hats
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/headwear/multifunctionalHeadwear">
+                    <Link
+                      href="/headwear/multifunctionalHeadwear"
+                      className="hover:text-gray-500"
+                    >
                       Multifunctional Headwear
                     </Link>
                   </li>
                   <li>
-                    <Link href="/headwear/beanies">Beanies</Link>
+                    <Link
+                      href="/headwear/beanies"
+                      className="hover:text-gray-500"
+                    >
+                      Beanies
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/headwear/truckerCaps">Trucker Caps</Link>
+                    <Link
+                      href="/headwear/truckerCaps"
+                      className="hover:text-gray-500"
+                    >
+                      Trucker Caps
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/headwear/bucketHats">Bucket Hats</Link>
+                    <Link
+                      href="/headwear/bucketHats"
+                      className="hover:text-gray-500"
+                    >
+                      Bucket Hats
+                    </Link>
                   </li>
                 </ul>
               </aside>
@@ -90,31 +123,67 @@ export default function CategoryPage({ params }) {
                 <ul className="menu border-2 p-2 text-gray-700">
                   <span className="text-xl font-bold">APPAREL</span>
                   <li>
-                    <Link href="/apparel/new-in-apparel">New in Apparel</Link>
+                    <Link
+                      href="/apparel/new-in-apparel"
+                      className="hover:text-gray-500"
+                    >
+                      New in Apparel
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/men">Men</Link>
+                    <Link href="/apparel/men" className="hover:text-gray-500">
+                      Men
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/women">Women</Link>
+                    <Link href="/apparel/women" className="hover:text-gray-500">
+                      Women
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/kids">Kids</Link>
+                    <Link href="/apparel/kids" className="hover:text-gray-500">
+                      Kids
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/t-shirts">T - Shirts</Link>
+                    <Link
+                      href="/apparel/t-shirts"
+                      className="hover:text-gray-500"
+                    >
+                      T - Shirts
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/golfers">Golfers</Link>
+                    <Link
+                      href="/apparel/golfers"
+                      className="hover:text-gray-500"
+                    >
+                      Golfers
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/hoodies">Hoodies</Link>
+                    <Link
+                      href="/apparel/hoodies"
+                      className="hover:text-gray-500"
+                    >
+                      Hoodies
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/jackets">Jackets</Link>
+                    <Link
+                      href="/apparel/jackets"
+                      className="hover:text-gray-500"
+                    >
+                      Jackets
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/apparel/bottoms">Bottoms</Link>
+                    <Link
+                      href="/apparel/bottoms"
+                      className="hover:text-gray-500"
+                    >
+                      Bottoms
+                    </Link>
                   </li>
                 </ul>
               </aside>
