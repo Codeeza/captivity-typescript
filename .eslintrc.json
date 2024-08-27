@@ -1,14 +1,15 @@
 {
-  "root": true,
-  "parser": "@babel/eslint-parser",
-  "parserOptions": {
-    "requireConfigFile": false,
-    "babelOptions": {
-      "presets": ["next/babel"]
+    "root": true,
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false,
+      "babelOptions": {
+        "presets": ["next/babel"]
+      }
+    },
+    "extends": ["next", "next/core-web-vitals"],
+    "rules": {
+      // Replace with actual rules if needed
     }
-  },
-  "extends": ["next", "next/core-web-vitals"],
-  "rules": {
-    // Your custom rules here
-}
-}
+  }
+  
