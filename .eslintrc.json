@@ -8,5 +8,7 @@
     }
   },
   "extends": ["next", "next/core-web-vitals"],
-  "rules": {}
+  "rules": {
+    // Your custom rules here
+}
 }

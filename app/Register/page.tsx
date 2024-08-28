@@ -31,6 +31,10 @@ interface FormFields {
   salesRep: string;
   termsAgree: boolean;
 }
+interface Country {
+  code: string;
+  name: string;
+}
 
 // Initialize form fields
 const initialFields: FormFields = {
@@ -55,7 +59,7 @@ const initialFields: FormFields = {
   zipCode: "",
   country: "",
   salesRep: "",
-  termsAgree: false
+  termsAgree: false,
 };
 
 const Register: React.FC = () => {
@@ -67,12 +71,23 @@ const Register: React.FC = () => {
   }, []);
 
   // Handle input changes
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value, type, checked } = e.target;
-    setFields(prevFields => ({
-      ...prevFields,
-      [name]: type === 'checkbox' ? checked : value
-    }));
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value, type } = e.target;
+
+    if (type === "checkbox") {
+      const { checked } = e.target as HTMLInputElement;
+      setFields((prevFields) => ({
+        ...prevFields,
+        [name]: checked,
+      }));
+    } else {
+      setFields((prevFields) => ({
+        ...prevFields,
+        [name]: value,
+      }));
+    }
   };
 
   // Handle form submission
@@ -296,7 +311,7 @@ const Register: React.FC = () => {
                   name="ifOther"
                   type="text"
                   placeholder="Specify if other"
-                  value={fields.ifOther || ''}
+                  value={fields.ifOther || ""}
                   onChange={handleChange}
                   className="bg-gray-50 w-full px-3 py-2 my-2 text-sm text-gray-700 border focus:outline-red-500"
                 />
@@ -338,8 +353,7 @@ const Register: React.FC = () => {
             {/* Street Address Inputs */}
             <div>
               <label htmlFor="streetOne">
-                Street Address 1
-                <span className="text-red-600">*</span>
+                Street Address 1<span className="text-red-600">*</span>
               </label>
               <input
                 id="streetOne"
@@ -424,7 +438,7 @@ const Register: React.FC = () => {
                 className="bg-gray-50 w-full px-3 py-2 my-2 text-sm text-gray-700 border font-normal"
               >
                 <option value="">Select Country</option>
-                {countries.map(country => (
+                {countries.map((country) => (
                   <option key={country.code} value={country.code}>
                     {country.name}
                   </option>
@@ -434,9 +448,7 @@ const Register: React.FC = () => {
 
             {/* Sales Representative Input */}
             <div>
-              <label htmlFor="salesRep">
-                Sales Representative
-              </label>
+              <label htmlFor="salesRep">Sales Representative</label>
               <input
                 id="salesRep"
                 name="salesRep"
