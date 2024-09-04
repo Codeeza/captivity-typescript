@@ -390,18 +390,8 @@ const Page = () => {
           </button>
         </form>
       </div>
-      {/* Horizontal line */}
-      <div className="w-full h-px   bg-gray-500 my-8"></div>
-
-      <Questions />
     </div>
   );
 };
 
 export default Page;
-
-//submit form
-// if (validate()) {
-//   setFormData((prev) => ({ ...prev, helpMe: items }));
-//   console.log("Form submitted:", formData);
-// }

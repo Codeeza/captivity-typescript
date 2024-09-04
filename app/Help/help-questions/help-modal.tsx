@@ -21,7 +21,6 @@ const Modal = ({ isOpen, onClose }) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
     // Handle form submission, e.g., send data to an API
-    // Reset the form
     setFormData({
       name: "",
       lastname: "",
