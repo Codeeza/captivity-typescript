@@ -7,6 +7,8 @@ const CustomOrders = () => {
       <h1 className={`${styles.customOrdersTitle} text-4xl font-bold mb-4`}>
         Custom Orders
       </h1>
+      {/* Line */}
+      <div className="w-full h-px   bg-gray-500 my-8"></div>
       <br />
       <section className={`${styles.customOrdersSection} mb-4`}>
         <h2 className="text-xl font-semibold text-black text-center">
@@ -35,9 +37,7 @@ const CustomOrders = () => {
       </section>
 
       {/* Line Above Procedures */}
-      <div className={styles.customLineWrapper}>
-        <div className={`${styles.customLine} ${styles.customLineProcedures}`}></div>
-      </div>
+      <div className="w-full h-px   bg-gray-500 my-8"></div>
 
       <section className={`${styles.customOrdersSection} mb-4`}>
         <h2 className="text-xl font-semibold text-black text-center">
@@ -77,9 +77,8 @@ const CustomOrders = () => {
       </section>
 
       {/* Line Above Understanding Custom Headwear and Apparel */}
-      <div className={styles.customLineWrapper}>
-        <div className={`${styles.customLine} ${styles.customLineHeadwearApparel}`}></div>
-      </div>
+      <div className="w-full h-px   bg-gray-500 my-8"></div>
+
       <br />
       <section className={`${styles.customOrdersSection} mb-4`}>
         <h2 className="text-xl font-semibold text-black text-center">

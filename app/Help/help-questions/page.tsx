@@ -4,16 +4,18 @@ import { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
 import { FaRegWindowMinimize } from "react-icons/fa";
 import Link from "next/link";
-import Modal from "./help-modal";
+import Modal from "./components/Modal";
+
+type QuestionType = string;
 
 const Questions = () => {
-  const [openQuestion, setOpenQuestion] = useState(null);
+  const [openQuestion, setOpenQuestion] = useState<QuestionType | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const toggleContent = (question) => {
+  const toggleContent = (question: QuestionType) => {
     setOpenQuestion(openQuestion === question ? null : question);
   };
 
@@ -24,7 +26,7 @@ const Questions = () => {
       </h1>
       <span className="max-w-2xl mx-auto text-center justify-start">
         {" "}
-        <h2 className="text-lg text-gray-500 font-bold mb-2">
+        <h2 className="text-lg text-gray-500 text-left font-bold mb-2">
           Popular Questions
         </h2>
       </span>

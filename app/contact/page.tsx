@@ -212,7 +212,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit}>
             <div className="mb-4 flex flex-col md:flex-row items-start justify-between">
               <div className="w-full md:w-1/2 md:pl-2 mt-4">
-                <label className="block text-gray-500">First Name *</label>
+                <label className="block text-gray-500">First Name <span className="text-red-600">*</span></label>
                 <input
                   type="text"
                   name="name"
@@ -254,7 +254,7 @@ const Contact = () => {
             <div className="mb-4 flex flex-col md:flex-row items-start justify-between">
               <div className="w-full md:w-1/2 md:pl-2 mt-4">
                 <label className="block text-gray-500 text-sm">
-                  Email Address *
+                  Email Address <span className="text-red-600">*</span>
                 </label>
                 <input
                   type="email"
@@ -296,7 +296,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-sm text-gray-500">Company *</label>
+              <label className="block text-sm text-gray-500">Company <span className="text-red-600">*</span></label>
               <textarea
                 name="company"
                 value={formData.company}
@@ -317,7 +317,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-sm text-gray-500">Message *</label>
+              <label className="block text-sm text-gray-500">Message <span className="text-red-600">*</span></label>
               <textarea
                 name="message"
                 value={formData.message}
