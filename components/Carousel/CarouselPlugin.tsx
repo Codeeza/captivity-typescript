@@ -29,7 +29,7 @@ const images = [
 
 export default function CarouselPlugin() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const intervalRef = useRef(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null); // Specify the type here
 
   const startCarousel = () => {
     intervalRef.current = setInterval(() => {
@@ -38,7 +38,9 @@ export default function CarouselPlugin() {
   };
 
   const stopCarousel = () => {
-    clearInterval(intervalRef.current);
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
   };
 
   useEffect(() => {

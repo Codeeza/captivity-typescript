@@ -7,7 +7,6 @@ import CarouselPlugin from "@/components/Carousel/CarouselPlugin";
 import Carousel from "@/components/SmallCarousel/SmallCarousel";
 import connectDB from "@/config/database"
 
-const Home = async () => {
   return (
     <div>
       <main>
