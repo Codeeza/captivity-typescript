@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto text-center mt-10">
-        <Link href="https://captivity.co.za/contact/">
+        <Link href="/contact/">
           <button className="bg-transparent border-2 border-slate-400 text-white hover:bg-red-700 hover:border-red-700 py-2 px-4">
             OUR OFFICES
           </button>

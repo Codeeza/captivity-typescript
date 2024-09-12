@@ -133,7 +133,7 @@ const Navbar = () => {
             <div className="text-xs mt-2">Home</div>
           </Link>
           <Link
-            href="/mobileCategories"
+            href="/Categories"
             className="flex flex-col items-center py-2 hover:text-red-500"
           >
             <TbCategoryFilled />

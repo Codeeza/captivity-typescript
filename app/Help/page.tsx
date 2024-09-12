@@ -244,7 +244,7 @@ const Page = () => {
                   )}
                 </div>
               </div>
-              <div className="w-full md:pl-2 mt-7 text-gray-500 font-bold block text-sm">
+              <div className="w-full md:pl-2 mt-7 text-black font-bold block text-sm">
                 <label>
                   How can we assist you?
                   <select
@@ -273,11 +273,14 @@ const Page = () => {
 
                 {selectedOption === "Suggestions" && (
                   <>
-                    <h5 className="mt-5 text-xs text-gray-500 font-bold">Suggestions</h5>
+                    <h5 className="mt-5 text-xs text-gray-500 font-bold">
+                      Suggestions
+                    </h5>
                     <div className="border-l-4 p-4 rounded-md">
                       <div className="ml-4 text-sm">
                         <label>
-                          {`${selectedOption}`}: <span className="text-red-600">*</span>
+                          {`${selectedOption}`}:{" "}
+                          <span className="text-red-600">*</span>
                         </label>
                         <div className="block">
                           {formData.suggestions.map((suggestion, index) => (
@@ -315,10 +318,14 @@ const Page = () => {
                   <div className="mt-5">
                     {items.map((item) => (
                       <div key={item.id}>
-                        <label className="text-sm text-gray-500">Please help me with...</label>
+                        <label className="text-sm text-gray-500">
+                          Please help me with...
+                        </label>
                         <div className="mb-4 p-4 border-l-4 rounded">
                           <div className="mb-2">
-                            <label className="block text-gray-500 text-sm mb-1">I need assistance with...</label>
+                            <label className="block text-gray-500 text-sm mb-1">
+                              I need assistance with...
+                            </label>
                             <select
                               className={`mt-1 block w-full hover:shadow-md hover:cursor-pointer transition duration-400 hover:bg-gray-300 bg-gray-200 h-10 ${
                                 errors.assistance
@@ -329,16 +336,24 @@ const Page = () => {
                               onChange={(e) => handleOptionChange(item.id, e)}
                             >
                               <option value="">Please select an option</option>
-                              <option value="Updating my information">Updating my information</option>
-                              <option value="Placing an order">Placing an order</option>
+                              <option value="Updating my information">
+                                Updating my information
+                              </option>
+                              <option value="Placing an order">
+                                Placing an order
+                              </option>
                               <option value="Payment">Payments</option>
                               <option value="Return">Returns</option>
-                              <option value="I can't login account">I can’t log into my account?</option>
+                              <option value="I can't login account">
+                                I can’t log into my account?
+                              </option>
                             </select>
                           </div>
                           {item.selectedOption && (
                             <div>
-                              <label className="block text-gray-700 mb-1">{item.selectedOption}</label>
+                              <label className="block text-gray-700 mb-1">
+                                {item.selectedOption}
+                              </label>
                               <textarea
                                 className="w-full p-4 h-32 bg-gray-200 hover:bg-gray-300 transition duration-400"
                                 value={item.text}
@@ -369,7 +384,9 @@ const Page = () => {
 
                 {selectedOption === "General Info" && (
                   <>
-                    <h5 className="mt-5 text-xs text-gray-500 font-bold">General Info</h5>
+                    <h5 className="mt-5 text-xs text-gray-500 font-bold">
+                      General Info
+                    </h5>
                     <div className="border-l-4 p-4 rounded-md">
                       <div className="ml-4 text-sm">
                         <label>{`${selectedOption}`}:</label>
@@ -379,13 +396,17 @@ const Page = () => {
                               <textarea
                                 name={`generalInfo-${index}`}
                                 value={generalInfo}
-                                onChange={(e) => handleGeneralInfoTextAreaChange(index, e)}
+                                onChange={(e) =>
+                                  handleGeneralInfoTextAreaChange(index, e)
+                                }
                                 placeholder="e.g. feature request, improvement, other"
                                 className="w-full p-4 h-32 bg-gray-200"
                               ></textarea>
                               <button
                                 type="button"
-                                onClick={() => handleRemoveGeneralInfoTextArea(index)}
+                                onClick={() =>
+                                  handleRemoveGeneralInfoTextArea(index)
+                                }
                                 className="top-1 right-1 z-9 hover:text-red-600 border-2 text-gray-500 hover:bg-gray-100 pt-1 pb-1 pl-2 pr-2 rounded-full"
                               >
                                 Remove Item
