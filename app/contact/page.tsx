@@ -681,7 +681,9 @@ const Contact = () => {
             <form onSubmit={handleSubmit}>
               <div className="mb-4 flex flex-col md:flex-row items-start justify-between">
                 <div className="w-full md:w-1/2 md:pl-2 mt-4">
-                  <label className="block text-gray-500">First Name *</label>
+                  <label className="block text-gray-500">
+                    First Name <span className="text-red-700">*</span>
+                  </label>
                   <input
                     type="text"
                     name="name"
@@ -723,7 +725,7 @@ const Contact = () => {
               <div className="mb-4 flex flex-col md:flex-row items-start justify-between">
                 <div className="w-full md:w-1/2 md:pl-2 mt-4">
                   <label className="block text-gray-500 text-sm">
-                    Email Address *
+                    Email Address <span className="text-red-700">*</span>
                   </label>
                   <input
                     type="email"
@@ -765,7 +767,9 @@ const Contact = () => {
               </div>
 
               <div className="mb-4">
-                <label className="block text-sm text-gray-500">Company *</label>
+                <label className="block text-sm text-gray-500">
+                  Company <span className="text-red-700">*</span>
+                </label>
                 <textarea
                   name="company"
                   value={formData.company}
@@ -786,7 +790,9 @@ const Contact = () => {
               </div>
 
               <div className="mb-4">
-                <label className="block text-sm text-gray-500">Message *</label>
+                <label className="block text-sm text-gray-500">
+                  Message <span className="text-red-700">*</span>
+                </label>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -846,3 +852,23 @@ const Contact = () => {
 };
 
 export default Contact;
+<svg
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  stroke="#ff4d00"
+>
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g
+    id="SVGRepo_tracerCarrier"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  ></g>
+  <g id="SVGRepo_iconCarrier">
+    {" "}
+    <path
+      d="M15.5 14.5C15.4015 14.5005 15.3038 14.4813 15.2128 14.4435C15.1218 14.4057 15.0392 14.3501 14.97 14.28L11.97 11.28L8.96999 14.28C8.82472 14.3502 8.6607 14.3716 8.50227 14.3411C8.34385 14.3107 8.19947 14.23 8.09056 14.111C7.98165 13.9919 7.91402 13.841 7.89771 13.6805C7.88139 13.52 7.91726 13.3585 7.99999 13.22L11.5 9.72001C11.6406 9.57956 11.8312 9.50067 12.03 9.50067C12.2287 9.50067 12.4194 9.57956 12.56 9.72001L16.06 13.22C16.2004 13.3606 16.2793 13.5513 16.2793 13.75C16.2793 13.9488 16.2004 14.1394 16.06 14.28C15.9873 14.3539 15.8998 14.4116 15.8034 14.4495C15.7069 14.4874 15.6035 14.5046 15.5 14.5Z"
+      fill="#ff4d00"
+    ></path>{" "}
+  </g>
+</svg>;
