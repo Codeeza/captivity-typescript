@@ -4,58 +4,66 @@ import styles from "./CustomOrders.module.css";
 const CustomOrders = () => {
   return (
     <div className={styles.customOrdersContainer}>
-      <h1 className={`${styles.customOrdersTitle} text-4xl font-bold mb-4`}>
+      <h1
+        className={`${styles.customOrdersTitle} text-4xl font-serif font-bold mb-2`}
+      >
         Custom Orders
       </h1>
       {/* Line */}
-      <div className="w-full h-px   bg-gray-500 my-8"></div>
+      <div className="w-[1900px] h-px bg-gray-500 mb-4 mt-8"></div>
       <br />
-      <section className={`${styles.customOrdersSection} mb-4`}>
-        <h2 className="text-xl font-semibold text-black text-center">
+
+      <div
+        className={`${styles.customOrdersSection}justify justify-center mb-4`}
+      >
+        <h2 className="text-[27px] font-serif text-gray-500 text-center">
           CUSTOM FACTORY ORDERS
         </h2>
         <br />
-        <div>
-          <p>
-            Custom factory orders give you greater flexibility and allow you to
-            create innovative styles and trends to suit your marketing
-            requirements. Change piping, stitching, fabrics or sandwich colours
-            to match corporate colours and logos – or develop your own, unique
-            range.
-          </p>
-          <br />
-          <p>
-            Our design team has the experience and expertise to bring your ideas
-            to life. Email your enquiry to{" "}
-            <a href="https://www.monica@captivity.co.za.">
-              monica@captivity.co.za
-            </a>{" "}
-            We would love to hear from you.
-          </p>
-          <br />
-        </div>
-      </section>
-
+        <p>
+          Custom factory orders give you greater flexibility and allow you to
+          create innovative styles and trends to suit your marketing
+          requirements. Change piping, stitching, fabrics or sandwich colours to
+          match corporate colours and logos – or develop your own, unique range.
+        </p>
+        <br />
+        <p>
+          Our design team has the experience and expertise to bring your ideas
+          to life. Email your enquiry to{" "}
+          <a href="https://www.monica@captivity.co.za.">
+            <span className="text-red-600">monica@captivity.co.za</span>
+          </a>{" "}
+          We would love to hear from you.
+        </p>
+        <br />
+      </div>
       {/* Line Above Procedures */}
-      <div className="w-full h-px   bg-gray-500 my-8"></div>
+      <div className="w-[1900px] h-px bg-gray-500 mb-4 mt-8"></div>
 
-      <section className={`${styles.customOrdersSection} mb-4`}>
-        <h2 className="text-xl font-semibold text-black text-center">
+      <div className="pr-5 mb-4 mt-4">
+        <h2 className="text-[27px] font-serif text-gray-500 text-center">
           PROCEDURES
         </h2>
         <br />
         <p>
           Enquiries for orders can be emailed to{" "}
-          <a href="https://www.info@captivity.co.za">info@captivity.co.za</a>
+          <a
+            href="mailto:info@captivity.co.za"
+            className="text-red-600 underline"
+          >
+            info@captivity.co.za
+          </a>
         </p>
+
         <br />
-        <div className={`${styles.customOrdersSection} text-black`}>
+
+        <ul className="text-black list-disc list-inside space-y-2">
           <li>
             Our minimum requirement for custom factory orders is 3000 units per
             colour, per style.
           </li>
           <li>
-            On confirmation of your order we will gladly execute a sample for
+            On confirmation of your order, we will gladly execute a sample for
             your approval.
           </li>
           <li>Samples take 8-10 working days to arrive.</li>
@@ -65,23 +73,27 @@ const CustomOrders = () => {
           </li>
           <li>Production of the order takes 60-90 days to produce.</li>
           <li>
-            Once completed, the order is shipped and this is usually a 4-6 week
+            Once completed, the order is shipped, and this is usually a 4-6 week
             delivery.
           </li>
-        </div>
+        </ul>
+
         <br />
+
         <p>
           For further information, please contact{" "}
-          <a className="text-gray-500 font-bold">Monica at (021) 510 3868</a>
+          <a href="tel:+27215103868" className="text-gray-600 font-bold">
+            Monica at (021) 510 3868
+          </a>
         </p>
-      </section>
+      </div>
 
       {/* Line Above Understanding Custom Headwear and Apparel */}
-      <div className="w-full h-px   bg-gray-500 my-8"></div>
+      <div className="w-[1900px] h-px bg-gray-500 mb-4 mt-8"></div>
 
       <br />
       <section className={`${styles.customOrdersSection} mb-4`}>
-        <h2 className="text-xl font-semibold text-black text-center">
+        <h2 className="text-[27px] font-serif text-gray-500 text-center">
           UNDERSTANDING CUSTOM HEADWEAR AND APPAREL
         </h2>
         <br />
