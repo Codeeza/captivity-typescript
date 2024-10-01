@@ -164,7 +164,7 @@ export default function Page() {
                             : product.image
                         }
                         alt={product.title}
-                        id={product.id.toString()}
+                        id={product.id.toString()}  // Convert the number to a string
                         onMouseEnter={() => handleMouseEnter(product.id)}
                         onMouseLeave={handleMouseLeave}
                         width={300}
