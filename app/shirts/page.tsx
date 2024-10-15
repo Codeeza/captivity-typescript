@@ -58,7 +58,7 @@ export default function Page() {
             className="w-full h-[200px] sm:h-[300px] filter brightness-75 "
             style={{ objectFit: "cover" }}
           />
-          <div class="absolute inset-0 bg-gradient-to-r from-cyan-700 to-green-500 mix-blend-multiply opacity-75"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-700 to-green-500 mix-blend-multiply opacity-75"></div>
           <div className="absolute top-20 sm:top-5 md:top-20 lg:top-24 w-full font-bold bg-opacity-50 text-white text-center px-4">
             <span className="text-5xl  sm:text-4xl md:text-5xl lg:text-7xl">
               <span className="text-yellow-300 sm:flex-wrap">JUST </span>{" "}

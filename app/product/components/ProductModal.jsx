@@ -1,3 +1,6 @@
+import { Product, ProductVariant } from "@/types/productTypes";
+
+
 const ProductModal = ({ product, setShowModal }) => {
   return (
     <div className="fixed text-black inset-0 p-5 h-full bg-gray-300 bg-opacity-50 flex justify-center items-center -4">

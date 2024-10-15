@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ProductModal from "./ProductModal";
 import Link from "next/link";
+import { Product } from "@/types/productTypes";
+
 
 const ProductPage = ({ product }) => {
   const [selectedVariant, setSelectedVariant] = useState(null);

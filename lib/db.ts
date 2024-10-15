@@ -1,3 +1,4 @@
+// lib/db.ts
 export const categoryMapping = {
     HeadwearCollection: "Headwear Collection",
     multifunctionalHeadwear: "Multifunctional Headwear",
